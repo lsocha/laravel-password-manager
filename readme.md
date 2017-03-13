@@ -11,5 +11,5 @@
 
 Laravel password manager, made used:  
 
-- [Datatables plugin for jquery.](https://datatables.net/).
+- [Datatables plugin for jquery](https://datatables.net/).
 
