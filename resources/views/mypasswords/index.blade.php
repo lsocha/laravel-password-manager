@@ -37,9 +37,9 @@ $(document).ready(function() {
     </div>
 
     @if ($message = Session::get('success'))
-        <div class="alert alert-success">
-            <p>{{ $message }}</p>
-        </div>
+            <div class="alert alert-success">
+                <p>{{ $message }}</p>
+            </div>
     @endif
 
     <table id="passwords_table" class="display table" width="100%" cellspacing="0">
@@ -70,8 +70,6 @@ $(document).ready(function() {
     @endforeach
     </tbody>
     </table>
-
-    {!! $passwords->render() !!}
 
 @endsection
 

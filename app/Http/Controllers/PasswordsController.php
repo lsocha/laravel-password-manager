@@ -14,9 +14,8 @@ class PasswordsController extends Controller
      */
     public function index(Request $request)
     {
-        $passwords = Password::orderBy('id','DESC')->paginate(5);
-        return view('mypasswords.index',compact('passwords'))
-            ->with('i', ($request->input('page', 1) - 1) * 5);
+        $passwords = Password::all();
+        return view('mypasswords.index', compact('passwords'));
     }
 
     /**
